@@ -109,12 +109,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CoordinatesGridWindow.xaml.cs">
+      <DependentUpon>CoordinatesGridWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EnumerableRandomizer.cs" />
     <Compile Include="GetRandomNumber.cs" />
     <Compile Include="ILoaderFile.cs" />
     <Compile Include="ItemRing.cs" />
     <Compile Include="LoaderFile.cs" />
     <Compile Include="TimeController.cs" />
+    <Page Include="CoordinatesGridWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

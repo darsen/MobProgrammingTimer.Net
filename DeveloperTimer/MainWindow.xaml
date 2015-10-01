@@ -82,7 +82,10 @@
                     <Button Content="Pause" Name="btnPause" Grid.Column="0" Grid.Row="0" Click="btnPause_Click"  />
                     <Button Content="Skip person" Name="btnRunningSkip" Grid.Column="1" Grid.Row="0" Click="btnSkip_Click"/>
                     <Button Content="Reset Timer" Name="btnResetTimer" Grid.Column="2" Grid.Row="0" Click="btnReset_Click"/>
-                </Grid>
+                        <Button Name="btnShowGrid" Grid.Column="3" Grid.Row="0" Click="btnShowGrid_Click">
+                            <AccessText>Show _Grid</AccessText>
+                        </Button>
+                    </Grid>
                 
             </StackPanel>
                 <Label Grid.Row="3" Grid.Column="1" Content="Switch It Up!" FontSize="64" Name="lblNextDeveloper" />

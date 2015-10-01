@@ -388,5 +388,11 @@ namespace DeveloperTimer
             endTime = DateTime.Now;
             UpdateUI(lblTime);
         }
+
+        private void btnShowGrid_Click(object sender, RoutedEventArgs e)
+        {
+            var gridWindow = new CoordinatesGridWindow();
+            gridWindow.Show();
+        }
     }
 }
