@@ -1,21 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
-namespace DeveloperTimer
+﻿namespace DeveloperTimer
 {
     using System.Windows.Controls.Primitives;
     using System.Windows.Input;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Media;
 
     public partial class CoordinatesGridWindow : Window
     {
@@ -56,9 +45,9 @@ namespace DeveloperTimer
             };
         }
 
-        private string CellName(char c, char n)
+        private string CellName(char letter, char number)
         {
-            return c + "-" + ((n) - 64);
+            return letter + "-" + ((number) - 64);
         }
 
         private Border NewCell()
