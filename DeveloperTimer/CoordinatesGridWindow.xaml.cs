@@ -32,12 +32,12 @@ namespace DeveloperTimer
 
         private void FillGrid()
         {
-            for (var c = 'A'; c <= 'Y'; c++)
+            for (var letter = 'A'; letter <= 'Y'; letter++)
             {
-                for (char n = 'A'; n <= 'Y'; n++)
+                for (var number = 'A'; number <= 'Y'; number++)
                 {
                     var cell = NewCell();
-                    var label = NewLabel(CellName(c, n));
+                    var label = NewLabel(CellName(letter, number));
                     cell.Child = label;
                     uniformGrid.Children.Add(cell);
                 }
